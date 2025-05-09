@@ -15,7 +15,6 @@
 
     header {
       background-color: #2c3e50;
-      color: white;
       text-align: center;
       padding: 20px;
     }
@@ -32,14 +31,18 @@
       margin: 0;
     }
 
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+    header h1, header h2 {
+      color: white;
     }
 
     h1, h2 {
       color: #2c3e50;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     iframe {
@@ -121,7 +124,6 @@
 
   <!-- Introducción -->
   <section id="introduccion">
-    <h1>TRABAJO DE FIN DE MASTER GIS ONLINE - IBAGUÉ CIUDAD DE 15 MINUTOS</h1>
     <h2>Entre barreras y oportunidades – Análisis Territorial</h2>
     <h2>RESUMEN TFM</h2>
     <p>Este Trabajo de Fin de Máster tiene como objetivo evaluar la cobertura territorial de los equipamientos urbanos en la ciudad de Ibagué (Colombia), bajo el enfoque de la Ciudad de 15 Minutos. El estudio se centra en tres tipos de equipamientos fundamentales: educación, salud y cultura-recreación, empleando herramientas avanzadas de Sistemas de Información Geográfica (SIG) para diagnosticar la accesibilidad peatonal y detectar brechas en la prestación de servicios.</p>
@@ -143,11 +145,14 @@
   <section id="visores">
     <h2>Visores Interactivos</h2>
 
+    <p>Este visor muestra los resultados de la población que se encuentra fuera de la cobertura del modelo de ciudad de 15 minutos, con sus caracteristicas. Es interactivo y a medida que se acerca o aleja a cada zona se actualiza la estadistica y gráficos</p>
     <iframe src="https://www.arcgis.com/apps/dashboards/055a6449ca0f452da75724af45a08d28"></iframe>
+    <p>Este visor muestra los mapas tematicos generados tanto el final del modelo de ciudad de 15 minutos, como los raster de cada categoria de equipamientos (Cultura, Educacion y Recreacion). Es interactivo y tiene funcionalidad de prender y apagar capas para comparar resultados. </p>
     <iframe src="https://www.arcgis.com/apps/dashboards/fba670fc645344ab9311a541775982e6"></iframe>
+    <p>Este visor muestra una presentación resumida de la vision, objetivos y resultados del proyecto de investigación. Subir y bajar con el scroll para avanzar en la presentación. </p>
     <iframe src="https://storymaps.arcgis.com/stories/ebb71fb0f1634e39a6e20b23f083871a"></iframe>
-
-     <p>Para acceder a las aplicaciones da click en el siguiente boton</p>
+    
+     <p>Para acceder a las funcionalidad plena de las aplicaciones da click en el siguiente botón</p>
 
     <div class="botones-visores">
       <a href="https://www.arcgis.com/apps/dashboards/055a6449ca0f452da75724af45a08d28" target="_blank" class="visor-btn">Visor 1</a>
@@ -204,7 +209,7 @@
 <!-- Participación Ciudadana -->
 <section id="consulta-ciudadana">
   <h2>Consulta Ciudadana</h2>
-  <p>Te invitamos a ser parte de este proyecto. Puedes responder directamente el formulario desde esta página:</p>
+  <p>Te invitamos a ser parte de este proyecto. Puedes responder directamente el formulario desde esta página y la información se tendrá en cuenta en las actualizaciones del modelo:</p>
   
   <iframe 
     src="https://survey123.arcgis.com/share/6d6965ec021e4796af145eb215a5f573?portalUrl=https://EsriMasterOnline.maps.arcgis.com"
@@ -233,3 +238,4 @@
 
 </body>
 </html>
+
