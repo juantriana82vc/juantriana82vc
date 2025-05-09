@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciudad de 15 Minutos - Ibagué</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .botones-visores {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      margin: 20px 0 40px 0;
+    }
+
+    .visor-btn {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      text-align: center;
+      flex: 1;
+    }
+
+    .visor-btn:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding-top: 20px;
+    }
+
+    .logos img {
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .footer-bottom {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin-top: 15px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="logos">
+      <img src="https://www.madridcorresponsable.es/wp-content/uploads/2022/11/esri.jpg" alt="ESRI España">
+      <img src="https://www.ucam.edu/sites/default/files/public/master-transformacion-digital-industria/logos-colaboradores/ucam.jpg" alt="UCAM España">
+    </div>
+    <h1>TRABAJO DE FIN DE MASTER GIS ONLINE - IBAGUÉ CIUDAD DE 15 MINUTOS</h1>
+    <h2>Ciudad de 15 Minutos - Ibagué</h2>
+  </header>
+
+  <!-- Introducción -->
+  <section id="introduccion">
+    <h1>TRABAJO DE FIN DE MASTER GIS ONLINE - IBAGUÉ CIUDAD DE 15 MINUTOS</h1>
+    <h2>Entre barreras y oportunidades – Análisis Territorial</h2>
+    <h2>RESUMEN TFM</h2>
+    <p>Este Trabajo de Fin de Máster tiene como objetivo evaluar la cobertura territorial de los equipamientos urbanos en la ciudad de Ibagué (Colombia), bajo el enfoque de la Ciudad de 15 Minutos. El estudio se centra en tres tipos de equipamientos fundamentales: educación, salud y cultura-recreación, empleando herramientas avanzadas de Sistemas de Información Geográfica (SIG) para diagnosticar la accesibilidad peatonal y detectar brechas en la prestación de servicios.</p>
+    <p>Se construyó una red de movilidad peatonal a partir de datos de OpenStreetMap, sobre la cual se calcularon áreas de servicio mediante un Network Dataset para determinar qué sectores urbanos cuentan con acceso a equipamientos en un rango de 15 minutos caminando. Asimismo, se incorporaron elementos del entorno urbano como barreras físicas (vías arterias) y se aplicaron técnicas de Densidad de Kernel para analizar la concentración espacial de servicios.</p>
+    <p>Una parte destacada del proyecto es el desarrollo de visores interactivos mediante la ArcGIS Maps SDK for JavaScript, personalizando componentes visuales, filtros, leyendas dinámicas y funcionalidades de consulta avanzada. Estas aplicaciones permiten al usuario final explorar los resultados del modelo de cobertura territorial y realizar análisis interactivos en un entorno web. Además, se integraron soluciones como Dashboards, StoryMaps y una encuesta ciudadana con Survey123, fomentando la participación ciudadana. El proyecto incorpora procesos automatizados mediante ModelBuilder, la gestión estructurada de datos geoespaciales en geodatabases, y la publicación de servicios y mapas en ArcGIS Online. En conjunto, esta solución SIG busca apoyar la toma de decisiones urbanas orientadas a la equidad, la resiliencia y la sostenibilidad del espacio urbano.</p>
+  </section>
+
+  <!-- Enlace a la caracterización urbana -->
+  <section style="padding: 20px; background-color: #f2f2f2;">
+    <p style="font-size: 1.1em;">
+      En el siguiente enlace puede acceder a una descripción del área urbana de análisis:
+      <a href="IBAGUE.HTML" style="color: #007acc; font-weight: bold;" target="_blank">
+        Caracterización del área urbana de Ibagué
+      </a>
+    </p>
+  </section>
+
+  <!-- Visores -->
+  <section id="visores">
+    <h2>Visores Interactivos</h2>
+
+    <iframe src="https://www.arcgis.com/apps/dashboards/055a6449ca0f452da75724af45a08d28"></iframe>
+    <iframe src="https://www.arcgis.com/apps/dashboards/fba670fc645344ab9311a541775982e6"></iframe>
+    <iframe src="https://storymaps.arcgis.com/stories/ebb71fb0f1634e39a6e20b23f083871a"></iframe>
+
+     <p>Para acceder a las aplicaciones da click en el siguiente boton</p>
+
+    <div class="botones-visores">
+      <a href="https://www.arcgis.com/apps/dashboards/055a6449ca0f452da75724af45a08d28" target="_blank" class="visor-btn">Visor 1</a>
+      <a href="https://www.arcgis.com/apps/dashboards/fba670fc645344ab9311a541775982e6" target="_blank" class="visor-btn">Visor 2</a>
+      <a href="https://storymaps.arcgis.com/stories/ebb71fb0f1634e39a6e20b23f083871a" target="_blank" class="visor-btn">StoryMap</a>
+    </div>
+  </section>
+
+  <!-- Conclusiones -->
+  <section id="conclusiones">
+    <h2>Conclusiones y Líneas de Investigación</h2>
+
+    <h3>A. Conclusiones comunes y elementos a considerar para una propuesta de esquema urbano de Ciudad de 15 Minutos</h3>
+    <p>Ambos artículos coinciden en que la Ciudad de 15 Minutos es una propuesta integral que combina urbanismo, movilidad, gobernanza y sostenibilidad. Sus coincidencias se reflejan en los siguientes elementos comunes:</p>
+    <ul>
+      <li>Accesibilidad cotidiana: todas las personas deben poder satisfacer sus necesidades diarias en un entorno cercano y seguro.</li>
+      <li>Mix funcional: superar la lógica de la zonificación para integrar múltiples usos del suelo en proximidad.</li>
+      <li>Centralidades distribuidas: dotar a cada barrio de una oferta básica de servicios y equipamientos.</li>
+      <li>Reapropiación del espacio público: transformar calles, patios escolares y terrenos subutilizados en espacios de convivencia.</li>
+      <li>Movilidad activa y sostenible: priorizar la bicicleta, el caminar y el transporte público local.</li>
+      <li>Equidad espacial: utilizar herramientas diagnósticas (como análisis de cobertura o mapas de accesibilidad) para detectar desigualdades y orientar las intervenciones.</li>
+    </ul>
+    <p>Estos elementos ofrecen una guía clara para el diseño de un esquema urbano basado en el modelo de ciudad de 15 minutos, como el que se propone en este TFM. De forma particular, se debe prestar atención a:</p>
+    <ul>
+      <li>El uso de redes de movilidad reales (Network Datasets) para evaluar coberturas reales de equipamientos.</li>
+      <li>Las condiciones sociodemográficas del territorio, para identificar población vulnerable con mayor necesidad de proximidad (niños, adultos mayores, personas con movilidad reducida).</li>
+      <li>Las barreras urbanas que dificultan la accesibilidad peatonal, como grandes vías, vacíos urbanos o usos del suelo no compatibles.</li>
+    </ul>
+
+    <h3>B. Líneas de investigación a profundizar en otros trabajos sobre este tema</h3>
+    <ul>
+      <li>Modelado geoespacial de accesibilidad: aplicación de herramientas GIS para calcular áreas de cobertura, redes caminables y brechas de acceso a servicios.</li>
+      <li>Evaluación del impacto social del modelo: análisis de cómo este enfoque mejora (o no) la calidad de vida, especialmente en barrios vulnerables.</li>
+      <li>Estudios comparativos internacionales: análisis de cómo se adapta el modelo en distintas ciudades (París, Barcelona, Bogotá, Medellín, Melbourne).</li>
+      <li>Intervenciones tácticas y bajo costo: estudio de proyectos urbanos rápidos, reversibles y comunitarios que promueven la proximidad funcional.</li>
+      <li>Gobernanza local y políticas urbanas: análisis de los marcos institucionales que facilitan o limitan la implementación de este modelo.</li>
+      <li>Proximidad y cambio climático: estudios que conecten la ciudad de 15 minutos con la reducción de emisiones por transporte y la resiliencia urbana.</li>
+    </ul>
+
+    <h2>Automatizar para Transformar: Inteligencia Geoespacial en la Ciudad de 15 Minutos</h2>
+    <p>La automatización de procesos en el análisis territorial es clave para garantizar la eficiencia, escalabilidad y replicabilidad de las metodologías urbanas basadas en el modelo de la Ciudad de 15 Minutos. Este enfoque, que promueve la proximidad funcional entre vivienda, trabajo, servicios y ocio, requiere del procesamiento de grandes volúmenes de datos espaciales, tanto vectoriales como ráster, provenientes de fuentes abiertas como OpenStreetMap o plataformas como Living Atlas. En este contexto, automatizar tareas como la conformación de geodatabases, la configuración de redes de movilidad peatonal (Network Dataset), el cálculo de áreas de influencia y el análisis de densidades permite no solo reducir tiempos y errores humanos, sino también facilitar la transferencia metodológica a otros contextos urbanos con características similares.</p>
+    <p>Desde la perspectiva de ArcGIS y su ecosistema de herramientas, la automatización mediante ModelBuilder, Python o flujos integrados en ArcGIS Pro permite estandarizar procedimientos complejos y replicarlos fácilmente en distintos territorios. Según Esri (2021), "los flujos de trabajo automatizados ayudan a los usuarios a realizar análisis consistentes y confiables a escala, apoyando la toma de decisiones basada en evidencia en entornos cambiantes" (p. 11). Esto es fundamental en proyectos de desarrollo urbano sostenible, donde las autoridades locales pueden adaptar estas metodologías a sus propias condiciones. Así, la experiencia aplicada en Ibagué se convierte en una buena práctica replicable, útil para evaluar desigualdades de acceso a servicios urbanos en otras ciudades intermedias de América Latina, reforzando el papel del análisis geoespacial en la planificación urbana.</p>
+
+    <!-- Bibliografía -->
+  <section id="Bibliografía">
+  <h2>Bibliografía</h2>
+      <li>Moreno, C. (2024). La ciudad de 15 minutos. Barcelona Societat.</li>
+      <li>Mayorga, M. (2021). París: la ciudad de los 15 minutos. En A pie o en bici (Cuadernos de Caminabilidad No. 6)</li>
+      <li>Alcaldía Municipal de Ibagué. (2014). Decreto 1000-0823 de 2014, por el cual se adopta la revisión ordinaria del Plan de Ordenamiento Territorial del Municipio de Ibagué (Tolima)</li>
+      <li>-	Esri. (2021). ArcGIS Pro: Automating Workflows. Environmental Systems Research Institute. Recuperado de https://www.esri.com/content/dam/esrisites/en-us/media/pdf/arcgis-pro-automating-workflows.pdf</li>
+    </ul>
+  </section>
+
+<!-- Participación Ciudadana -->
+<section id="consulta-ciudadana">
+  <h2>Consulta Ciudadana</h2>
+  <p>Te invitamos a ser parte de este proyecto. Puedes responder directamente el formulario desde esta página:</p>
+  
+  <iframe 
+    src="https://survey123.arcgis.com/share/6d6965ec021e4796af145eb215a5f573?portalUrl=https://EsriMasterOnline.maps.arcgis.com"
+    width="100%" 
+    height="800px" 
+    style="border: none; border-radius: 10px;">
+  </iframe>
+</section>
+      
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>TFM MASTERGIS ONLINE</p>
+    <p>AUTOR ARQ JUAN GABRIEL TRIANA C</p>
+    <p>EMAIL trazaurbana@gmail.com</p>
+  </footer>
+  <div class="footer-bottom">
+    <div class="logos">
+      <img src="https://www.madridcorresponsable.es/wp-content/uploads/2022/11/esri.jpg" alt="ESRI España">
+      <img src="https://www.ucam.edu/sites/default/files/public/master-transformacion-digital-industria/logos-colaboradores/ucam.jpg" alt="UCAM España">
+    </div>
+    <p>&copy; 2025 - Proyecto de Ciudad de 15 Minutos - Ibagué</p>
+  </div>
+
+</body>
+</html>
